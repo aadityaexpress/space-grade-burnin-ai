@@ -79,9 +79,23 @@ Runs the complete test suite comparing Static vs Dynamic screening, computing Re
 python evaluate.py
 ```
 
-### 2. Launch the Interactive QA Dashboard
-Launches the Streamlit Mission-Assurance Dashboard:
+### 2. Launch the Web Dashboards
+
+#### Option A: FastAPI Web App (Vercel-Native)
 ```powershell
-streamlit run app.py
+python app.py
 ```
-Open your browser at `http://localhost:8501` to explore lot distributions, trajectories, and inspect individual components.
+Open `http://localhost:8000` to view the interactive single-page dashboard.
+
+#### Option B: Streamlit Web Dashboard
+```powershell
+streamlit run streamlit_app.py
+```
+Open `http://localhost:8501` to explore lot distributions, trajectories, and inspect individual components.
+
+---
+
+## Deployment
+
+* **Deploy to Vercel**: Connect your GitHub repository to [Vercel](https://vercel.com). Vercel will automatically detect `vercel.json` and `app.py` and deploy the serverless web app instantly.
+* **Deploy to Streamlit Community Cloud**: Connect the repository to [share.streamlit.io](https://share.streamlit.io) and set the main file path to `streamlit_app.py`.
