@@ -1,0 +1,11 @@
+metric,value
+Static Screening Recall,14.6%
+Static Field Escapes (FN),246
+Module A Recall,52.1%
+Module A F2-Score,0.5756
+Drift MAE (uA),0.7258
+Drift RMSE (uA),1.7383
+Drift R2,0.9923
+Early Drifters Caught @ 24h,138/138 (100.0%)
+Integrated System Recall,100.0%
+Chamber Hours Saved,"27,648 hrs"
